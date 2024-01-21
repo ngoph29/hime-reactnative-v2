@@ -10,6 +10,13 @@ import {
 import { useState, useEffect } from "react";
 import { CameraScreen, Camera } from "react-native-camera-kit";
 import { upload, ocr } from "../api/services";
+import {
+  ViroARScene,
+  ViroText,
+  ViroConstants,
+  ViroARSceneNavigator,
+} from '@viro-community/react-viro';
+
 
 function CCameraScreen({ navigation }) {
   const [hasPermission, setHasPermission] = useState(null);

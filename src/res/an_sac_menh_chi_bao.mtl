@@ -1,0 +1,33 @@
+# Blender 4.0.1 MTL File: 'an sac menh chi bao.blend'
+# www.blender.org
+
+newmtl Scratched_Gold
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+Pm 1.000000
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Kd Scratched_Gold_Albedo.exr
+map_Pr Scratched_Gold_Roughness.exr
+map_Bump -bm 0.200000 Scratched_Gold_Normal.exr
+
+newmtl de_duoi
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+Pm 0.886364
+Ps 0.000000
+Pc 0.000000
+Pcr 0.030000
+aniso 0.000000
+anisor 0.000000
+map_Pr Scratched_Gold_Roughness.exr

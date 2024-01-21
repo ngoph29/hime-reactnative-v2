@@ -7,6 +7,7 @@ import HomeScreen from "./src/screens/home";
 import ContentScreen from "./src/screens/content";
 import CCameraScreen from "./src/screens/camera";
 import LibraryScreen from "./src/screens/library";
+import ARScreen from "./src/screens/AR";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Stack.Screen name="Content" component={ContentScreen} options={{ title: "Nội dung" }} />
         <Stack.Screen name="Camera" component={CCameraScreen} options={{ title: "Camera" }} />
         <Stack.Screen name="Library" component={LibraryScreen} options={{ title: "Library" }} />
+        <Stack.Screen name="AR" component={ARScreen} options={{ title: "AR" }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

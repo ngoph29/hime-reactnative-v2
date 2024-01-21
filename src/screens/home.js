@@ -84,10 +84,16 @@ export default function HomeScreen({ navigation }) {
         />
       </ScrollView>
       <FAB
-        style={styles.fab}
+        style={styles.fab_cam}
+        icon="camera"
+        color="coral"
+        onPress={() => navigation.navigate("Camera")}
+      ></FAB>
+      <FAB
+        style={styles.fab_AR}
         icon="camera"
         color="black"
-        onPress={() => navigation.navigate("Camera")}
+        onPress={() => navigation.navigate("AR")}
       ></FAB>
     </View>
   );
@@ -117,12 +123,21 @@ const styles = StyleSheet.create({
   contentContainer: {
     alignItems: "center",
   },
-  fab: {
+  fab_cam: {
     position: "absolute",
     bottom: 0,
     alignSelf: "flex-end",
     borderRadius: 100,
     backgroundColor: "coral",
+    margin: 16,
+    right: 0,
+  },
+  fab_AR: {
+    position: "absolute",
+    bottom: 100,
+    alignSelf: "flex-end",
+    borderRadius: 100,
+    backgroundColor: "black",
     margin: 16,
     right: 0,
   },
