@@ -21,15 +21,12 @@ var ARScreen = createReactClass({
   getInitialState() {
     return {
       texture: "white",
-      playAnim: false,
-      animateCar: false,
     }
   },
 
   render: function() {
     return (
       <ViroARScene>
-
         <ViroARImageMarker target={"logo"} onAnchorFound={this._onAnchorFound} pauseUpdates={this.state.pauseUpdates}>
           <ViroNode scale={[0, 0, 0]} transformBehaviors={["billboardY"]}/>
 
@@ -39,8 +36,7 @@ var ARScreen = createReactClass({
             resources={[require('../res/an sac menh chi bao.mtl'),
                         ]}
             type="OBJ"
-            materials={this.state.texture}
-            onClick={this._toggleButtons} />
+            materials={this.state.texture}/>
 
           <ViroSpotLight
             innerAngle={5}
